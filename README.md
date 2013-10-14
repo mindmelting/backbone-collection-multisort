@@ -3,7 +3,7 @@ backbone-collection-multisort
 
 A couple of small functions to assist in sorting on multiple attributes in Backbone Collections.
 
-If the first attributes are the same, then it iterate down to further attributes set in an array.
+If the first attributes are the same, then it will iterate down to further attributes set in an array.
 
 Use by calling:
 
