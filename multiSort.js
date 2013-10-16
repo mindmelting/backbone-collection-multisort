@@ -18,7 +18,8 @@ var multiSort = function(modelA, modelB, attributes) {
   if (modelA instanceof Backbone.Model && modelB instanceof Backbone.Model) {
     compResult = compare(modelA, modelB, attributes[0]);
     if (compResult === 0 && attributes.length > 1) {
-      compResult = multiSort(modelA, modelB, attributes.splice(0, 1));
+      attributes.splice(0, 1);
+      compResult = multiSort(modelA, modelB, attributes);
     }
     return compResult;
   } else {
